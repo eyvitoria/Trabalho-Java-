@@ -16,6 +16,7 @@ public class TrabalhoJava {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        new inicio().setVisible(true);
     }
     
 }
