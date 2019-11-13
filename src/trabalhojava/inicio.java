@@ -16,6 +16,11 @@ public class inicio extends javax.swing.JFrame {
      */
     public inicio() {
         initComponents();
+        setSize(734,487);
+        setResizable(false);
+        setLocationRelativeTo(this);
+        setTitle("Harry Potter");
+       
     }
 
     /**
@@ -37,11 +42,21 @@ public class inicio extends javax.swing.JFrame {
 
         jButton1.setBackground(new java.awt.Color(205, 154, 30));
         jButton1.setText("BATALHAR");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
         getContentPane().add(jButton1);
         jButton1.setBounds(310, 280, 110, 60);
 
         jButton2.setBackground(new java.awt.Color(205, 154, 30));
         jButton2.setText("SAIR");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
         getContentPane().add(jButton2);
         jButton2.setBounds(310, 370, 110, 60);
 
@@ -55,6 +70,14 @@ public class inicio extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    System.exit(0);
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
      * @param args the command line arguments
