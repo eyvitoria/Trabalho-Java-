@@ -36,8 +36,8 @@ public class batalha extends javax.swing.JFrame {
 
         jLabel2 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
+        cash = new javax.swing.JLabel();
+        cash2 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
@@ -50,15 +50,15 @@ public class batalha extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(null);
 
-        jLabel3.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
-        jLabel3.setText("jLabel3");
-        getContentPane().add(jLabel3);
-        jLabel3.setBounds(120, 420, 80, 30);
+        cash.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        cash.setText("jLabel3");
+        getContentPane().add(cash);
+        cash.setBounds(120, 420, 80, 30);
 
-        jLabel5.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
-        jLabel5.setText("jLabel5");
-        getContentPane().add(jLabel5);
-        jLabel5.setBounds(520, 410, 80, 40);
+        cash2.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        cash2.setText("jLabel5");
+        getContentPane().add(cash2);
+        cash2.setBounds(520, 410, 80, 40);
 
         jButton1.setText("Feitiço 1");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -124,13 +124,13 @@ public class batalha extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel cash;
+    private javax.swing.JLabel cash2;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
     // End of variables declaration//GEN-END:variables
 }
