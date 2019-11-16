@@ -33,8 +33,13 @@ public class tela2 extends javax.swing.JFrame {
         getContentPane().setLayout(null);
 
         jButton1.setText("COMEÇAR");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
         getContentPane().add(jButton1);
-        jButton1.setBounds(373, 170, 90, 23);
+        jButton1.setBounds(353, 170, 110, 23);
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/giphy.gif"))); // NOI18N
         getContentPane().add(jLabel1);
@@ -42,6 +47,11 @@ public class tela2 extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    new batalha().setVisible(true);
+    dispose();
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments

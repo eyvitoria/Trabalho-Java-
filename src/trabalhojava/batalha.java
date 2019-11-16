@@ -1,7 +1,11 @@
 
 package trabalhojava;
 
+import java.applet.Applet;
+import java.applet.AudioClip;
+import java.net.URL;
 import java.util.Random;
+import javax.swing.JOptionPane;
 
 
 public class batalha extends javax.swing.JFrame {
@@ -14,7 +18,12 @@ public class batalha extends javax.swing.JFrame {
         setTitle("Batalha");
         hpH(hpHarry);
         hpV(hpVal);
-        
+        batalha();
+    }
+    public void batalha(){
+        URL som = getClass().getResource("../sons/batalha.wav");
+        AudioClip play = Applet.newAudioClip(som);
+        play.play();
     }
     
     Random random = new Random(); 
@@ -29,6 +38,27 @@ public class batalha extends javax.swing.JFrame {
     this.hpVal = vida;
     cash2.setText(""+vida);
     }
+    
+    public void jogadaadversario(){
+     int num = (int)Math.round(Math.random()*3+1);
+     if(num == 1){hpH(hpHarry - 10);
+      JOptionPane.showMessageDialog(null,"Valdemort usou o feitiço 1");
+     }
+     if(num == 2){hpH(hpHarry - 15);JOptionPane.showMessageDialog(null,"Valdemort usou o feitiço 2");}
+     if(num == 3){hpV(hpVal + 5);JOptionPane.showMessageDialog(null,"Valdemort usou o contra-feitiço");}
+    
+    }
+    public void perdeu(){
+    if (hpVal <= 0) {
+            JOptionPane.showMessageDialog(null,"Valdemort perdeu");
+                        new inicio().setVisible(true);
+                        dispose();
+        } 
+    if (hpHarry <= 0){
+            JOptionPane.showMessageDialog(null,"Harry perdeu");
+            new inicio().setVisible(true);
+            dispose();
+}}
        
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
@@ -36,8 +66,8 @@ public class batalha extends javax.swing.JFrame {
 
         jLabel2 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
+        cash = new javax.swing.JLabel();
+        cash2 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
@@ -50,15 +80,17 @@ public class batalha extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(null);
 
-        jLabel3.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
-        jLabel3.setText("jLabel3");
-        getContentPane().add(jLabel3);
-        jLabel3.setBounds(120, 420, 80, 30);
+        cash.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        cash.setForeground(new java.awt.Color(255, 255, 255));
+        cash.setText("jLabel3");
+        getContentPane().add(cash);
+        cash.setBounds(120, 420, 80, 30);
 
-        jLabel5.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
-        jLabel5.setText("jLabel5");
-        getContentPane().add(jLabel5);
-        jLabel5.setBounds(520, 410, 80, 40);
+        cash2.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        cash2.setForeground(new java.awt.Color(255, 255, 255));
+        cash2.setText("jLabel5");
+        getContentPane().add(cash2);
+        cash2.setBounds(520, 410, 80, 40);
 
         jButton1.setText("Feitiço 1");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -67,15 +99,15 @@ public class batalha extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton1);
-        jButton1.setBounds(70, 290, 110, 25);
+        jButton1.setBounds(70, 290, 110, 23);
 
         jButton2.setText("Feitiço 2");
         getContentPane().add(jButton2);
-        jButton2.setBounds(70, 320, 110, 25);
+        jButton2.setBounds(70, 320, 110, 23);
 
         jButton3.setText("Contra-Feitiço");
         getContentPane().add(jButton3);
-        jButton3.setBounds(70, 350, 110, 25);
+        jButton3.setBounds(70, 350, 110, 23);
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/essa.jpg"))); // NOI18N
         getContentPane().add(jLabel1);
@@ -124,13 +156,13 @@ public class batalha extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel cash;
+    private javax.swing.JLabel cash2;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
     // End of variables declaration//GEN-END:variables
 }
