@@ -1,10 +1,25 @@
 
 package trabalhojava;
 
+import java.applet.Applet;
+import java.applet.AudioClip;
+import java.net.URL;
+
 public class tela2 extends javax.swing.JFrame {
 
     public tela2() {
         initComponents();
+        setSize(482,230);
+         setResizable(false);
+         setLocationRelativeTo(this);
+         batalha();
+    }
+
+    
+    public void batalha(){
+        URL som = getClass().getResource("../sons/batalha.wav");
+        AudioClip play = Applet.newAudioClip(som);
+        play.play();
     }
 
     @SuppressWarnings("unchecked")
