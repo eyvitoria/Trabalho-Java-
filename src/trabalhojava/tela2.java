@@ -39,7 +39,11 @@ public class tela2 extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton1);
+<<<<<<< HEAD
         jButton1.setBounds(373, 170, 90, 25);
+=======
+        jButton1.setBounds(353, 170, 110, 23);
+>>>>>>> e460c93f2b2db07d2fe00863e958323582b88b5b
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/giphy.gif"))); // NOI18N
         getContentPane().add(jLabel1);
@@ -49,7 +53,12 @@ public class tela2 extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+<<<<<<< HEAD
         // TODO add your handling code here:
+=======
+    new batalha().setVisible(true);
+    dispose();
+>>>>>>> e460c93f2b2db07d2fe00863e958323582b88b5b
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
