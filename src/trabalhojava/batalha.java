@@ -81,13 +81,17 @@ public class batalha extends javax.swing.JFrame {
         getContentPane().setLayout(null);
 
         cash.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+
         cash.setForeground(new java.awt.Color(255, 255, 255));
+
         cash.setText("jLabel3");
         getContentPane().add(cash);
         cash.setBounds(120, 420, 80, 30);
 
         cash2.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+
         cash2.setForeground(new java.awt.Color(255, 255, 255));
+
         cash2.setText("jLabel5");
         getContentPane().add(cash2);
         cash2.setBounds(520, 410, 80, 40);
@@ -117,7 +121,10 @@ public class batalha extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
+    hpV(hpVal- 10);
+    JOptionPane.showMessageDialog(null,"Harry usou o feitiço");
+    jogadaadversario();
+    perdeu();
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
