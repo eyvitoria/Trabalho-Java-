@@ -81,17 +81,13 @@ public class batalha extends javax.swing.JFrame {
         getContentPane().setLayout(null);
 
         cash.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
-
         cash.setForeground(new java.awt.Color(255, 255, 255));
-
         cash.setText("jLabel3");
         getContentPane().add(cash);
         cash.setBounds(120, 420, 80, 30);
 
         cash2.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
-
         cash2.setForeground(new java.awt.Color(255, 255, 255));
-
         cash2.setText("jLabel5");
         getContentPane().add(cash2);
         cash2.setBounds(520, 410, 80, 40);
@@ -106,10 +102,20 @@ public class batalha extends javax.swing.JFrame {
         jButton1.setBounds(70, 290, 110, 23);
 
         jButton2.setText("Feitiço 2");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
         getContentPane().add(jButton2);
         jButton2.setBounds(70, 320, 110, 23);
 
         jButton3.setText("Contra-Feitiço");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
         getContentPane().add(jButton3);
         jButton3.setBounds(70, 350, 110, 23);
 
@@ -122,10 +128,24 @@ public class batalha extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
     hpV(hpVal- 10);
-    JOptionPane.showMessageDialog(null,"Harry usou o feitiço");
+    JOptionPane.showMessageDialog(null,"Harry usou o feitiço 1");
     jogadaadversario();
     perdeu();
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+      hpV(hpVal - 15);
+    JOptionPane.showMessageDialog(null,"Harry usou o feitiço 2");
+    jogadaadversario();
+     perdeu();
+    }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+     hpH(hpHarry + 5);
+    JOptionPane.showMessageDialog(null,"Harry usou o contra-feitiço");
+    jogadaadversario();
+     perdeu();
+    }//GEN-LAST:event_jButton3ActionPerformed
 
     /**
      * @param args the command line arguments
