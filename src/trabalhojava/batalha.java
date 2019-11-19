@@ -80,18 +80,20 @@ public class batalha extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(null);
 
-        cash.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        cash.setFont(new java.awt.Font("Tempus Sans ITC", 1, 18)); // NOI18N
         cash.setForeground(new java.awt.Color(255, 255, 255));
         cash.setText("jLabel3");
         getContentPane().add(cash);
-        cash.setBounds(120, 420, 80, 30);
+        cash.setBounds(150, 420, 80, 30);
 
-        cash2.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        cash2.setFont(new java.awt.Font("Tempus Sans ITC", 1, 18)); // NOI18N
         cash2.setForeground(new java.awt.Color(255, 255, 255));
         cash2.setText("jLabel5");
         getContentPane().add(cash2);
-        cash2.setBounds(520, 410, 80, 40);
+        cash2.setBounds(520, 420, 80, 40);
 
+        jButton1.setBackground(new java.awt.Color(205, 154, 30));
+        jButton1.setFont(new java.awt.Font("Tempus Sans ITC", 1, 14)); // NOI18N
         jButton1.setText("Feitiço 1");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -99,8 +101,10 @@ public class batalha extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton1);
-        jButton1.setBounds(70, 290, 110, 23);
+        jButton1.setBounds(40, 320, 140, 27);
 
+        jButton2.setBackground(new java.awt.Color(205, 154, 30));
+        jButton2.setFont(new java.awt.Font("Tempus Sans ITC", 1, 14)); // NOI18N
         jButton2.setText("Feitiço 2");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -108,8 +112,10 @@ public class batalha extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton2);
-        jButton2.setBounds(70, 320, 110, 23);
+        jButton2.setBounds(40, 350, 140, 27);
 
+        jButton3.setBackground(new java.awt.Color(205, 154, 30));
+        jButton3.setFont(new java.awt.Font("Tempus Sans ITC", 1, 14)); // NOI18N
         jButton3.setText("Contra-Feitiço");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -117,7 +123,7 @@ public class batalha extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton3);
-        jButton3.setBounds(70, 350, 110, 23);
+        jButton3.setBounds(40, 380, 140, 27);
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/essa.jpg"))); // NOI18N
         getContentPane().add(jLabel1);

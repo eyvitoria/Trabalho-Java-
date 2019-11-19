@@ -32,6 +32,8 @@ public class tela2 extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(null);
 
+        jButton1.setBackground(new java.awt.Color(205, 154, 30));
+        jButton1.setFont(new java.awt.Font("Tempus Sans ITC", 1, 14)); // NOI18N
         jButton1.setText("COMEÇAR");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -39,11 +41,7 @@ public class tela2 extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton1);
-
-        jButton1.setBounds(373, 170, 90, 25);
-
-        jButton1.setBounds(353, 170, 110, 23);
-
+        jButton1.setBounds(333, 170, 130, 27);
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/giphy.gif"))); // NOI18N
         getContentPane().add(jLabel1);
