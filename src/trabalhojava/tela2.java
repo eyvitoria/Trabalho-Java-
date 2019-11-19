@@ -1,4 +1,3 @@
-
 package trabalhojava;
 
 import java.applet.Applet;
@@ -57,9 +56,7 @@ public class tela2 extends javax.swing.JFrame {
         // TODO add your handling code here:
 
     new batalha().setVisible(true);
-
-
-
+    
    dispose();
 
     }//GEN-LAST:event_jButton1ActionPerformed
